@@ -14,7 +14,8 @@ SOURCES += \
     Alarme.cpp \
     Capteur.cpp \
     Clavier.cpp \
-    Voyant.cpp
+    Voyant.cpp \
+    Porte.cpp
 
 HEADERS += \
     Archivage.h \
@@ -26,4 +27,5 @@ HEADERS += \
     Alarme.h \
     Capteur.h \
     Clavier.h \
-    Voyant.h
+    Voyant.h \
+    Porte.h

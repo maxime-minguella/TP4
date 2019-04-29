@@ -9,15 +9,11 @@ namespace nsDigicode {
     {
     private:
         int delai;
-        Chrono* chrono;
     protected:
         int attente;
+        Chrono* chrono;
     public:
-        ObjetTempo (Chrono* chrono, int tps)
-        {
-            this->delai = tps;
-            this->chrono = chrono;
-        }
+        ObjetTempo (Chrono*, int);
         Chrono* getChrono() { return this->chrono; }
         inline void finTempo() { this->attente = 0; }
         int getDelai() { return this->delai; }
