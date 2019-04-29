@@ -1,14 +1,19 @@
 #ifndef _INTERFACE
 #define _INTERFACE
+
 #include <string>
+#include "ObjetTempo.h"
 
 namespace nsDigicode {
 
-	class InterfaceDeSaisie //To do
+    class InterfaceDeSaisie : public ObjetTempo
 	{
-		//To do
+    private:
+        int nbChiffresAttendus;
 		void statut(std::string="\n");
-		//To do
+    public:
+        InterfaceDeSaisie (Chrono*, int, int);
+        int saisirCode (void);
 	}; // InterfaceDeSaisie
 	
 } /* ns_Digicode */
