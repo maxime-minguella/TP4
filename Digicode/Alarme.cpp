@@ -1,11 +1,11 @@
 #include "Alarme.h"
 
-Alarme::Alarme()
+nsDigicode::Alarme::Alarme()
 {
 
 }
 
-void Alarme::declencher()
+void nsDigicode::Alarme::declencher()
 {
     while (true) {
         std::cout << "Alarme : la porte n'a pas été refermée" << std::endl;

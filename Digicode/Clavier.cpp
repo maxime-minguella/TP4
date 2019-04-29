@@ -1,12 +1,12 @@
 #include "Clavier.h"
 #include "kbhit.h"
 
-Clavier::Clavier()
+nsDigicode::Clavier::Clavier()
 {
 
 }
 
-int Clavier::saisirChiffre()
+int nsDigicode::Clavier::saisirChiffre()
 {
     int result = _kbhit();
     if (result == 0 || result < '0' || result > '9')

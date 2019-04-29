@@ -1,12 +1,12 @@
 #include "Capteur.h"
 #include "kbhit.h"
 
-Capteur::Capteur()
+nsDigicode::Capteur::Capteur()
 {
 
 }
 
-int Capteur::detecter()
+int nsDigicode::Capteur::detecter()
 {
     return _kbhit();
 }

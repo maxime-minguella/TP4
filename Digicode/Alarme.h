@@ -4,11 +4,15 @@
 #include <iostream>
 #include <unistd.h>
 
-class Alarme
-{
-public:
-    Alarme();
-    void declencher();
-};
+namespace nsDigicode {
+
+    class Alarme
+    {
+    public:
+        Alarme();
+        void declencher();
+    };
+
+}
 
 #endif // ALARME_H
