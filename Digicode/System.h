@@ -1,11 +1,26 @@
 #ifndef SYSTEM_H
 #define SYSTEM_H
 
+#include "Alarme.h"
+#include "Archivage.h"
+#include "BD.h"
+#include "Chrono.h"
+#include "InterfaceDeSaisie.h"
+#include "Porte.h"
 
-class System
-{
-public:
-    System();
-};
+namespace nsDigicode {
+
+    class System
+    {
+    private:
+        InterfaceDeSaisie interface;
+        Chrono chrono;
+        Alarme alarme;
+        Porte porte;
+    public:
+        System(BD*, Archivage*);
+    };
+
+}
 
 #endif // SYSTEM_H

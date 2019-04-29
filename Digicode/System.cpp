@@ -1,6 +1,6 @@
 #include "System.h"
 
-System::System()
+nsDigicode::System::System(BD* bd, Archivage* arch)
 {
 
 }
