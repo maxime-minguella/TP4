@@ -3,8 +3,7 @@
 
 namespace nsDigicode {
 
-	class ObjetTempo;
-	
+    class ObjetTempo;
 	class Chrono 
 	{
 		int actif;

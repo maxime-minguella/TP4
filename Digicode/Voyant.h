@@ -18,7 +18,7 @@ namespace nsDigicode {
         Voyant(Couleur couleur, Etat etat);
         void allumer();
         void eteindre();
-        std::string getStatus();
+        std::string getStatus() const;
     };
 
 }

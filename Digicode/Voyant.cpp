@@ -16,7 +16,7 @@ void nsDigicode::Voyant::eteindre()
     this->etat = eteint;
 }
 
-std::string nsDigicode::Voyant::getStatus()
+std::string nsDigicode::Voyant::getStatus() const
 {
     switch (this->etat) {
         case allume:
