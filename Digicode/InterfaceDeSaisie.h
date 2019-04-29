@@ -3,6 +3,8 @@
 
 #include <string>
 #include "ObjetTempo.h"
+#include "Clavier.h"
+#include "Voyant.h"
 
 namespace nsDigicode {
 
@@ -10,6 +12,9 @@ namespace nsDigicode {
 	{
     private:
         int nbChiffresAttendus;
+        Clavier leClavier;
+        Voyant  leVoyantVert;
+        Voyant  leVoyantRouge;
 		void statut(std::string="\n");
     public:
         InterfaceDeSaisie (Chrono*, int, int);

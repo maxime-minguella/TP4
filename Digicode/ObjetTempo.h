@@ -13,7 +13,8 @@ namespace nsDigicode {
         int attente;
         Chrono* chrono;
     public:
-        ObjetTempo (Chrono*, int);
+        ObjetTempo (Chrono* c, int i) :
+            delai (i),    chrono (c) {};
         Chrono* getChrono() { return this->chrono; }
         inline void finTempo() { this->attente = 0; }
         int getDelai() { return this->delai; }

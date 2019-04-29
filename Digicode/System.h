@@ -17,8 +17,10 @@ namespace nsDigicode {
         Chrono chrono;
         Alarme alarme;
         Porte porte;
+        BD bd;
+        Archivage achvg;
     public:
-        System(BD*, Archivage*);
+        System(int, int, int);
     };
 
 }
