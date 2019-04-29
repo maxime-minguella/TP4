@@ -6,6 +6,7 @@ class Capteur
 {
 public:
     Capteur();
+    int detecter();
 };
 
 #endif // CAPTEUR_H
