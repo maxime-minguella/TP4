@@ -1,9 +1,14 @@
 #include <iostream>
+#include "System.h"
 
 using namespace std;
+using namespace nsDigicode;
 
 int main(void)
 {
-    cout << "A vous de compléter le code  !!!"  << endl;
+    BD* bd = new BD();
+    Archivage* avg = new Archivage();
+    System sys (bd, avg);
+
     return 0;
 }
